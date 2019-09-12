@@ -93,7 +93,7 @@ async function fetchTableData() {
             const fastestTime = results
                 .filter((res) => res.slug === slug)
                 .map((s) => new Date(s.completedAt))
-                .filter((d) => d instanceof Date && Number.isFinite(d))
+                .filter((d) => d instanceof Date)
                 .sort((a, b) => {
                     if (+a.getTime() > +b.getTime()) return 1;
                     if (+a.getTime() < +b.getTime()) return -1;
