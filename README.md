@@ -1,5 +1,5 @@
 # CodeWars API results server
-
+[![CircleCI](https://circleci.com/gh/aslepenkov/codewars-results-server/tree/master.svg?style=svg)](https://circleci.com/gh/aslepenkov/codewars-results-server/tree/master)
 backend for https://github.com/aslepenkov/yandex-js-dashboard
 
 ## Features
