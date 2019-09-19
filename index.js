@@ -37,7 +37,7 @@ app.listen(port, () => {
     console.log(`Example app listening on port ${port}!`);
 });
 
-cron.schedule('0 */15 * * * *', () => {
+cron.schedule('*/20 * * * *', () => {
     console.log(`Fetch data on ${(new Date()).toISOString()}`);
     codewarsHelper.writeData();
 });
