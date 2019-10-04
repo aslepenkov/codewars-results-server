@@ -45,7 +45,7 @@ async function getResultsAsync() {
                 .catch((error) => {
                     console.log(error);
                 })
-                .finally(() => {});
+                .finally(() => { });
         }
     } catch (error) {
         console.log(error);
@@ -88,7 +88,7 @@ async function fetchTableData() {
 
 
             const comletedTime = new Date(timestr);
-
+            const startTime = new Date(startDate);
             const resultTime = new Date(expiryDate) - comletedTime; // new Date(timestr);
             const fastestTime = results
                 .filter((res) => res.slug === slug)
@@ -107,11 +107,10 @@ async function fetchTableData() {
                 let diff = Math.abs(
                     comletedTime.getTime() - fastestTime.getTime()
                 );
-                const maxDiff = TWO_WEEKS;
 
-                if (diff > maxDiff) {
+                if (fastestTime.getTime() < startTime.getTime()) {
                     diff = Math.abs(
-                        comletedTime.getTime() - new Date(startDate).getTime()
+                        comletedTime.getTime() - startTime.getTime()
                     );
                 }
 
