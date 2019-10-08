@@ -109,10 +109,16 @@ async function fetchTableData() {
                 );
 
                 if (fastestTime.getTime() < startTime.getTime()) {
-                    diff = Math.abs(
-                        comletedTime.getTime() - startTime.getTime()
-                    );
+                    if (comletedTime.getTime() < startTime.getTime()) {
+                        diff = 0;
+                    } else {
+                        diff = Math.abs(
+                            comletedTime.getTime() - startTime.getTime()
+                        );
+                    }
                 }
+
+
 
                 let seconds = diff / 1000;
                 const hours = parseInt(seconds / 3600, 10);
