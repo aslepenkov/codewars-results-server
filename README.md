@@ -54,7 +54,7 @@ backend for https://github.com/aslepenkov/yandex-js-dashboard
     {
         "playerName": {
             "real": "Алексей Слепенков",
-            "nick": "4slepenkov"
+            "nick": "slepenkov"
         },
         "doneCount": {
             "done": 22,
