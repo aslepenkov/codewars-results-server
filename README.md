@@ -26,7 +26,7 @@ backend for https://github.com/aslepenkov/yandex-js-dashboard
 {
     "data": [
         {
-            "real": "Алексей Слепенков",
+            "real": "Алексей ",
             "nick": "4slepenkov"
         }
     ]
