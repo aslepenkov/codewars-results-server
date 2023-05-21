@@ -53,7 +53,7 @@ backend for https://github.com/aslepenkov/yandex-js-dashboard
 [
     {
         "playerName": {
-            "real": "Алексей Слепенков",
+            "real": "Алексей ",
             "nick": "slepenkov"
         },
         "doneCount": {
