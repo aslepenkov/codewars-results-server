@@ -21,7 +21,7 @@
   "author": "4slepenkov",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.6.0",
+    "axios": "^1.7.4",
     "body-parser": "^1.20.1",
     "express": "^4.20.0",
     "node-cron": "^2.0.3"
